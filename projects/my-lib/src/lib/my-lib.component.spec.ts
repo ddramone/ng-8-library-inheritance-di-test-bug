@@ -1,14 +1,18 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MyLibComponent } from './my-lib.component';
+import { MyLibService } from './my-lib.service';
 
-describe('MyLibComponent', () => {
+fdescribe('MyLibComponent', () => {
   let component: MyLibComponent;
   let fixture: ComponentFixture<MyLibComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MyLibComponent ]
+      declarations: [ MyLibComponent ],
+      providers: [
+        MyLibService
+      ]
     })
     .compileComponents();
   }));

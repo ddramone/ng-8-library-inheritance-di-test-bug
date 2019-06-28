@@ -7,6 +7,6 @@ describe('MyLibService', () => {
 
   it('should be created', () => {
     const service: MyLibService = TestBed.get(MyLibService);
-    expect(service).toBeTruthy();
+    expect(service.injector).toBeDefined();
   });
 });

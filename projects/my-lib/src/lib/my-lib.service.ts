@@ -1,9 +1,17 @@
-import { Injectable } from '@angular/core';
+import { Injectable, Injector } from '@angular/core';
+
+
+@Injectable()
+export class BaseService {
+  constructor(public injector: Injector) {
+  }
+}
 
 @Injectable({
   providedIn: 'root'
 })
-export class MyLibService {
+export class MyLibService extends BaseService {
 
-  constructor() { }
+  public foo = 'bar';
+
 }
