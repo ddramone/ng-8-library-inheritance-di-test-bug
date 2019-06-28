@@ -18,6 +18,20 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "flexc-sparkle": [
+        "dist/flexc-sparkle"
+      ],
+      "flexc-sparkle/*": [
+        "dist/flexc-sparkle/*"
+      ],
+      "my-lib": [
+        "dist/my-lib"
+      ],
+      "my-lib/*": [
+        "dist/my-lib/*"
+      ]
+    }
   }
 }
