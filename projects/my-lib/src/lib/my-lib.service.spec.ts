@@ -2,7 +2,7 @@ import { TestBed } from '@angular/core/testing';
 
 import { MyLibService } from './my-lib.service';
 
-describe('MyLibService', () => {
+fdescribe('MyLibService', () => {
   beforeEach(() => TestBed.configureTestingModule({}));
 
   it('should be created', () => {
